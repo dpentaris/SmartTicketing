@@ -1,0 +1,18 @@
+<Project Sdk="Aspire.AppHost.Sdk/13.6.0">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <UserSecretsId>ferry-booking-apphost</UserSecretsId>
+    <!-- Dashboard and orchestrator come from NuGet, so plain `dotnet run` works without the Aspire CLI. -->
+    <NoWarn>$(NoWarn);ASPIRE010</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FerryBooking.Api\FerryBooking.Api.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+@Api = http://localhost:5170
+
+GET {{Api}}/api/ports
+
+###
+
+# Replace the date with one in the next two weeks (seed data starts tomorrow).
+GET {{Api}}/api/sailings?from=PIR&to=SDA&date=2026-10-01&passengers=2
+
+###
+
+POST {{Api}}/api/sailings
+Content-Type: application/json
+
+{
+  "originPortCode": "PIR",
+  "destinationPortCode": "HER",
+  "vesselId": "00000000-0000-0000-0000-000000000000",
+  "departureTime": "2026-12-01T21:00:00+02:00",
+  "arrivalTime": "2026-12-02T06:00:00+02:00",
+  "farePerPassenger": 45.00
+}

@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/FerryBooking.Api/FerryBooking.Api.csproj" />
+    <Project Path="src/FerryBooking.AppHost/FerryBooking.AppHost.csproj" />
+    <Project Path="src/FerryBooking.ServiceDefaults/FerryBooking.ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/FerryBooking.IntegrationTests/FerryBooking.IntegrationTests.csproj" />
+    <Project Path="tests/FerryBooking.UnitTests/FerryBooking.UnitTests.csproj" />
+  </Folder>
+</Solution>
